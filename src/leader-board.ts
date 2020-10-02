@@ -1,0 +1,1 @@
+export const leaderBoard = (players: any) => [...players].sort((a, b) => b.score - a.score);
