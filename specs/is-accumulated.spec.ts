@@ -8,6 +8,7 @@ describe('Checks if score of ALL player is more than or equals to accumulated', 
       return {
         score: Math.floor(Math.random() * (20 - 10) + 10),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }
@@ -23,6 +24,7 @@ describe('Checks if score of ALL player is more than or equals to accumulated', 
       return {
         score: Math.floor(Math.random() * (20 - 10) + 10),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }
@@ -31,6 +33,7 @@ describe('Checks if score of ALL player is more than or equals to accumulated', 
       return {
         score: Math.floor(Math.random() * (10 - 0) + 0),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }
@@ -46,6 +49,7 @@ describe('Checks if score of ALL player is more than or equals to accumulated', 
       return {
         score: Math.floor(Math.random() * (9 - 0) + 0),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }
@@ -64,6 +68,7 @@ describe('Checks if score of a player is more than or equal to accumulated', () 
       return {
         score: Math.floor(Math.random() * (20 - 10) + 10),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }
@@ -81,6 +86,7 @@ describe('Checks if score of a player is more than or equal to accumulated', () 
       return {
         score: Math.floor(Math.random() * (20 - 10) + 10),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }
@@ -99,6 +105,7 @@ describe('Checks if score of a player is more than or equal to accumulated', () 
       return {
         score: Math.floor(Math.random() * (20 - 8) + 8),
         name: '',
+        rank: 0,
         lastRoll: 0,
         penalty: false
       }

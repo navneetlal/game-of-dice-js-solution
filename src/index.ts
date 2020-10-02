@@ -7,6 +7,7 @@ import { IPlayer } from './interface';
 let userInput: string;
 let numberOfPlayers: number;
 let pointsOfAccumulate: number;
+let currentRank: number = 1;
 
 // Ask user for number of players
 userInput = prompt("Number of players (Number): ");
@@ -27,6 +28,7 @@ let players: IPlayer[] = new Array(numberOfPlayers).fill({}).map((_, index) => {
   return {
     name: `Player-${index + 1}`,
     score: 0,
+    rank: 0,
     lastRoll: 0,
     penalty: false
   }
@@ -63,6 +65,10 @@ while (!isAllAccumulated(players, pointsOfAccumulate)) {
         else player.penalty = false;
         player.score += currentRoll;
         player.lastRoll = currentRoll;
+        if(player.score >= pointsOfAccumulate && !player.rank) {
+          player.rank = currentRank;
+          currentRank += 1;
+        }
       }
       else {
         print('log', 'Wrong Input - Try Again....');

@@ -1,1 +1,1 @@
-export const leaderBoard = (players: any) => [...players].sort((a, b) => b.score - a.score);
+export const leaderBoard = (players: any) => [...players].sort((a, b) => a.rank - b.rank);
